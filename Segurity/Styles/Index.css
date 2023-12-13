@@ -10,3 +10,33 @@ body{
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(199, 199, 199, 0.858) 99%);
 }
+
+#nav-tabs-ul > li {
+    cursor: pointer;
+}
+#register-modal{
+
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.7875525210084033) 0%, rgba(250,255,255,0.8295693277310925) 50%, rgba(227,238,255,0.8463760504201681) 100%);
+}
+
+.signika-font{
+    font-family: 'Signika', sans-serif;
+}
+
+@media only screen and (max-width: 576px){
+    
+    #nav-icons-div{
+        width: 100%;
+        justify-content: end;
+        padding-left: 12px;
+        margin: 10px 0px;
+        margin-right: 15px;
+
+    }
+
+    body{
+        background: #000;
+    }
+}
+

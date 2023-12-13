@@ -15,6 +15,9 @@
     href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
     rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
     <!-- MDB -->
     <link
     href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
@@ -27,9 +30,9 @@
 
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg py-0 px-4 navbar-light bg-body-tertiary">
+<nav class="navbar navbar-expand-sm py-0 px-sm-4 navbar-light bg-body-tertiary">
     <!-- Container wrapper -->
-    <div class="container-fluid pt-2">
+    <div class="container-fluid pt-2 px-0 px-sm-3">
       <!-- Toggle button -->
       <button
         data-mdb-collapse-init
@@ -59,11 +62,9 @@
         
         <!-- Left links -->
 <!-- Tabs navs -->
-<ul class="nav nav-tabs nav-justified  w-100 " id="ex1" role="tablist">
-    <li class="nav-item dropdown "
-    id="dropdownMenuButton1"
-    data-mdb-dropdown-init
-    data-mdb-ripple-init
+<ul class="nav nav-tabs nav-justified nav-tabs-ul flex-sm-row w-100 " id="ex1" role="tablist">
+    <li class="nav-item dropdown"
+    data-mdb-dropdown-init="#drop1"
     >
         <a
         data-mdb-tab-init
@@ -72,38 +73,34 @@
         href="#ex3-tabs-1"
         role="tab"
         aria-controls="ex3-tabs-1"
-        aria-selected="true"
+        aria-selected="false"
         >Link</a
         >
-        <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+        <ul class="dropdown-menu w-100" id="drop1">
             <li>
               <a class="dropdown-item" data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#staticBackdrop">
                 Registrar
               </a>
             </li>
-            <!-- Button trigger modal -->
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
-
-
-
     </li>
     <li class="nav-item dropdown"
         id="dropdownMenuButton2"
-        data-mdb-dropdown-init
-        data-mdb-ripple-init
+        data-mdb-dropdown-init="#drop2"
         >
         <a
+        data-toggle="tab"
         data-mdb-tab-init
         class="nav-link"
         id="ex3-tab-2"
         href="#ex3-tabs-2"
         role="tab"
         aria-controls="ex3-tabs-2"
-        aria-selected="true"
-        >Very very very very long link</a>
-        <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton2">
+        aria-selected="false"
+        >punto 2</a>
+        <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton2" id="#drop2">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -111,9 +108,9 @@
     </li>
     <li class="nav-item dropdown" 
         id="dropdownMenuButton3"
-    data-mdb-dropdown-init
-    data-mdb-ripple-init
-    >
+        data-mdb-dropdown-init="#drop3"
+        
+        >
         <a
         data-mdb-tab-init
         class="nav-link"
@@ -121,11 +118,11 @@
         href="#ex3-tabs-3"
         role="tab"
         aria-controls="ex3-tabs-3"
-        aria-selected="false"
+        aria-selected="true"
         >Another link</a
         >
-        <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="#">Action</a></li>
+        <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton" id="drop3">
+            <li><a class="dropdown-item" href="#">fgfd</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
@@ -140,7 +137,7 @@
       <!-- Collapsible wrapper -->
   
       <!-- Right elements -->
-      <div class="d-flex  align-items-center">
+      <div class="d-flex  align-items-center" id="nav-icons-div">
         <!-- Icon -->
         <a class="text-reset me-3" href="#">
           <i class="fas fa-shopping-cart"></i>
@@ -224,7 +221,7 @@
         role="tabpanel"
         aria-labelledby="ex3-tab-1"
     >
-    <div class="w-75 mx-auto table-responsive">
+    <div class="w-75 mx-auto table-responsive rounded-3">
     <table class="table align-middle mb-0 bg-white ">
         <thead class="bg-light">
           <tr>
@@ -265,9 +262,64 @@
               </button>
             </td>
           </tr>
-
-
-
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img
+                    src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                    class="rounded-circle"
+                    />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">John Doe</p>
+                  <p class="text-muted mb-0">john.doe@gmail.com</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p class="fw-normal mb-1">Software engineer</p>
+              <p class="text-muted mb-0">IT department</p>
+            </td>
+            <td>
+              <span class="badge badge-success rounded-pill d-inline">Active</span>
+            </td>
+            <td>Senior</td>
+            <td>
+              <button type="button" class="btn btn-link btn-sm btn-rounded">
+                Edit
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img
+                    src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                    class="rounded-circle"
+                    />
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">John Doe</p>
+                  <p class="text-muted mb-0">john.doe@gmail.com</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p class="fw-normal mb-1">Software engineer</p>
+              <p class="text-muted mb-0">IT department</p>
+            </td>
+            <td>
+              <span class="badge badge-success rounded-pill d-inline">Active</span>
+            </td>
+            <td>Senior</td>
+            <td>
+              <button type="button" class="btn btn-link btn-sm btn-rounded">
+                Edit
+              </button>
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -302,17 +354,65 @@
   aria-labelledby="staticBackdropLabel"
   aria-hidden="true"
 >
-  <div class="modal-dialog">
-    <div class="modal-content">
+  <div class="modal-dialog" >
+    <div class="modal-content" id="register-modal">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <h5 class="modal-title signika-font w-100 text-center fs-3" id="staticBackdropLabel">Registrar</h5>
         <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">...</div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-mdb-ripple-init data-mdb-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" data-mdb-ripple-init>Understood</button>
+      <div class="modal-body">
+        <form>
+          <!-- 2 column grid layout with text inputs for the first and last names -->
+          <div class="row mb-4">
+            <div class="col">
+              <div data-mdb-input-init class="form-outline">
+                <input type="text" id="form6Example1" class="form-control" />
+                <label class="form-label" for="form6Example1">First name</label>
+              </div>
+            </div>
+            <div class="col">
+              <div data-mdb-input-init class="form-outline">
+                <input type="text" id="form6Example2" class="form-control" />
+                <label class="form-label" for="form6Example2">Last name</label>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Text input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <input type="text" id="form6Example3" class="form-control" />
+            <label class="form-label" for="form6Example3">Company name</label>
+          </div>
+        
+          <!-- Text input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <input type="text" id="form6Example4" class="form-control" />
+            <label class="form-label" for="form6Example4">Address</label>
+          </div>
+        
+          <!-- Email input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <input type="email" id="form6Example5" class="form-control" />
+            <label class="form-label" for="form6Example5">Email</label>
+          </div>
+        
+          <!-- Number input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <input type="number" id="form6Example6" class="form-control" />
+            <label class="form-label" for="form6Example6">Phone</label>
+          </div>
+        
+          <!-- Message input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+            <label class="form-label" for="form6Example7">Additional information</label>
+          </div>
       </div>
+      <div class="modal-footer">
+          <!-- Submit button -->
+        <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Agregar</button>
+      </div>
+    </form>
     </div>
   </div>
 </div>
@@ -328,4 +428,9 @@
 type="text/javascript"
 src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
 ></script>
+<script
+type="text/javascript"
+src="./Segurity/Js/Index.js"
+></script>
+
 </html>
